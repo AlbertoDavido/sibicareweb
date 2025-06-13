@@ -1,4 +1,5 @@
 const displayValue=document.querySelectorAll(".num");
+let hasAnimated=false;
 
 let interval=5000;
 
@@ -15,3 +16,27 @@ displayValue.forEach(value => {
         }
     }, duration);
 });
+const scroll=document.getElementById("partner-scroll");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

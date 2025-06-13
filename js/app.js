@@ -172,10 +172,28 @@ phone.addEventListener("input", function(e){
     }
 })
 
+const DOB=document.querySelectorAll('#date-set');
 
+const maxYear=Today.getFullYear()-18;
+const minYear = 1970; // Set minimum year
+   // Must be at least 18 years old
 
+  // Set allowed date range
+  DOB.min = `${minYear}-01-01`;
+  DOB.max = `${maxYear}-12-31`;
 
+  // Disable input if date is invalid
+//   DOB.addEventListener("change", function () {
+//     const selectedDate = new Date(this.value);
+//     const selectedYear = selectedDate.getFullYear();
 
+//     if (selectedYear < minYear || selectedYear > maxYear) {
+//       this.disabled = true;
+//       alert("Selected date is out of allowed range. Input disabled.");
+//     }
+//   });
+
+const endDate=document.getElementById('date-set').setAttribute("max", maxYear);
 
 
 

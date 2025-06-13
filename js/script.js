@@ -635,3 +635,33 @@ function whatsappButton({
       document.querySelector('#tClfpqnG').style.display = 'none';
     });
 }
+
+<script
+    src='js/script.js'
+    async
+    onLoad="whatsappButton({
+    buttonName:'',
+    buttonIconSize: '40',
+    brandImageUrl:'images/sibilogo-edit3.png',
+    brandName:'Sibi Homecare',
+    brandSubtitleText:'Replies instantly',
+    buttonSize:'Small',
+    buttonPosition:'right',
+    callToAction:'Start Chat',
+    phoneNumber:'254759138000',
+    welcomeMessage:'Hi there 👋\n\nHow can we be of help to you today?',
+    prefillMessage:'',
+    })"
+    >
+</script>
+
+
+
+
+
+
+
+
+
+
+
