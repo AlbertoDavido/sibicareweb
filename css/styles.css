@@ -333,7 +333,7 @@ font-weight: 700;
   font-weight: 700;
 }
 footer{
-  background: linear-gradient(rgba(9,32,50, 0.8),rgba(9,32,50,0.8)), url("images/footer3.avif");
+  background: linear-gradient(rgba(9,32,50, 0.8),rgba(9,32,50,0.8)), url("https://albertodavido.github.io/sibicareweb/images/footer3.avif");
   background-size: cover;
   background-position: center;
   text-align: center;
