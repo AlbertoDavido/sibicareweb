@@ -267,7 +267,7 @@ font-weight: 400;
   height: 100vh;
   margin-left: auto;
   
-  background: url("/images/homecare-hero.jpg");
+  background: url("images/homecare-hero.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -333,7 +333,7 @@ font-weight: 700;
   font-weight: 700;
 }
 footer{
-  background: linear-gradient(rgba(9,32,50, 0.8),rgba(9,32,50,0.8)), url("/images/footer3.avif");
+  background: linear-gradient(rgba(9,32,50, 0.8),rgba(9,32,50,0.8)), url("images/footer3.avif");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -445,7 +445,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("/images/physiotherapist.jpg");
+  background: url("images/physiotherapist.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -476,7 +476,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("/images/alzheimers-hero1.jpg");
+  background: url("images/alzheimers-hero1.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -500,7 +500,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("/images/palliative-hero2.jpg");
+  background: url("images/palliative-hero2.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -524,7 +524,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("/images/respite-hero.jpg");
+  background: url("images/respite-hero.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -548,7 +548,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("/images/transitional-hero.avif");
+  background: url("images/transitional-hero.avif");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -572,7 +572,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("/images/phlebotomy-hero1.jpg");
+  background: url("images/phlebotomy-hero1.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -596,7 +596,7 @@ font-family: "Montserrat";
   height: 100vh;
   
   
-  background: url("/images/wellness-hero.jpg");
+  background: url("images/wellness-hero.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -623,7 +623,7 @@ font-family: "Montserrat";
 }
 .contact-hero{
   height: 90vh;
-  background: url("/images/contact-hero1.webp");
+  background: url("images/contact-hero1.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -644,7 +644,7 @@ font-family: "Montserrat";
 }
 .about-hero{
   height: 70vh;
-  background: url("/images/about-hero.avif");
+  background: url("images/about-hero.avif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -705,7 +705,7 @@ label{
 }
 
 .abt-pic{
-  background-image: url("/images/hospital3.avif");
+  background-image: url("images/hospital3.avif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
