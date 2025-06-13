@@ -148,7 +148,14 @@ background-color: white;
   
   align-items: center;
 }
-
+.footer-img:hover{
+  background-color: rgba(0, 0, 0, 0.397);
+  color: white;
+}
+.footer-img:hover img{
+  
+  filter: brightness(0) invert(1);
+}
 .row h4{
   
   font-family: 'Montserrat';
@@ -267,7 +274,7 @@ font-weight: 400;
   height: 100vh;
   margin-left: auto;
   
-  background: url("images/homecare-hero.jpg");
+  background: url("https://albertodavido.github.io/sibicareweb/images/homecare-hero.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -445,7 +452,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("images/physiotherapist.jpg");
+  background: url("https://albertodavido.github.io/sibicareweb/images/physiotherapist.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -476,7 +483,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("images/alzheimers-hero1.jpg");
+  background: url("https://albertodavido.github.io/sibicareweb/images/alzheimers-hero1.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -500,7 +507,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("images/palliative-hero2.jpg");
+  background: url("https://albertodavido.github.io/sibicareweb/images/palliative-hero2.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -524,7 +531,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("images/respite-hero.jpg");
+  background: url("https://albertodavido.github.io/sibicareweb/images/respite-hero.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -548,7 +555,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("images/transitional-hero.avif");
+  background: url("https://albertodavido.github.io/sibicareweb/images/transitional-hero.avif");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -572,7 +579,7 @@ font-family: "Montserrat";
   height: 100vh;
   margin-left: auto;
   
-  background: url("images/phlebotomy-hero1.jpg");
+  background: url("https://albertodavido.github.io/sibicareweb/images/phlebotomy-hero1.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -596,7 +603,7 @@ font-family: "Montserrat";
   height: 100vh;
   
   
-  background: url("images/wellness-hero.jpg");
+  background: url("https://albertodavido.github.io/sibicareweb/images/wellness-hero.jpg");
   background-size: cover !important;
   background-position: center !important;   /* Center the image */
   background-repeat: no-repeat; /* Prevent tiling */
@@ -623,7 +630,7 @@ font-family: "Montserrat";
 }
 .contact-hero{
   height: 90vh;
-  background: url("images/contact-hero1.webp");
+  background: url("https://albertodavido.github.io/sibicareweb/images/contact-hero1.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -644,7 +651,7 @@ font-family: "Montserrat";
 }
 .about-hero{
   height: 70vh;
-  background: url("images/about-hero.avif");
+  background: url("https://albertodavido.github.io/sibicareweb/images/about-hero.avif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -703,9 +710,31 @@ label{
   font-weight: 900 !important;
   font-size: 40px;
 }
-
+.t-text h2{
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 40px;
+  color: #03045e;
+}
+.t-text a{
+  text-decoration: none;
+  color: #1e6083;
+}
+.t-text li{
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 500;
+}
+.bub-text p{
+  font-family: "DM Sans";
+  font-size: 20px;
+}
+.t-text a:hover{
+  text-decoration: none;
+  color: #52819b;
+}
 .abt-pic{
-  background-image: url("images/hospital3.avif");
+  background-image: url("https://albertodavido.github.io/sibicareweb/images/hospital3.avif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
