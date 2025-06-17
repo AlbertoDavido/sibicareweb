@@ -924,6 +924,7 @@ label{
 .partner-logo img{
   background-color: white;
   height: 90px;
+  
 }
 .image-size img{
   height: 90px;
@@ -982,5 +983,27 @@ label{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.822);
 }
+.carousel-item-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.hover-description {
+  position: absolute;
+  height: 20px;
+  width: 80%;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background: rgba(107, 19, 19); /* semi-transparent black */
+  color: #fff;
+  /* padding: 10px; */
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
+.carousel-item-wrapper:hover .hover-description {
+  opacity: 1;
+}
 
