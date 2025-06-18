@@ -1,7 +1,10 @@
 const displayValue=document.querySelectorAll(".num");
-let hasAnimated=false;
+const itemCounter=document.querySelectorAll("#partner-scroll");
 
-let interval=5000;
+const observerdata= new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            let interval=5000;
 
 displayValue.forEach(value => {
     let startValue=0;
@@ -16,6 +19,10 @@ displayValue.forEach(value => {
         }
     }, duration);
 });
+        }
+    })
+})
+itemCounter.forEach(el=>observerdata.observe(el));
 const scroll=document.getElementById("partner-scroll");
 
 

@@ -636,7 +636,7 @@ function whatsappButton({
     });
 }
 
-<script
+{/* <script
     src='js/script.js'
     async
     onLoad="whatsappButton({
@@ -653,10 +653,26 @@ function whatsappButton({
     prefillMessage:'',
     })"
     >
-</script>
+</script> */}
+function initWhatsappButton(){
+  whatsappButton({
+ buttonName:'',
+    buttonIconSize: '40',
+    brandImageUrl:'images/sibilogo-edit3.png',
+    brandName:'Sibi Homecare',
+    brandSubtitleText:'Replies instantly',
+    buttonSize:'Small',
+    buttonPosition:'right',
+    callToAction:'Start Chat',
+    phoneNumber:'254759138000',
+    welcomeMessage:'Hi there 👋\n\nHow can we be of help to you today?',
+    prefillMessage:'', 
+    })
+}
 
-
-
+function scrollToSection() {
+  const el = document.getElementById('scroll');
+  if (el) el.scrollIntoView({ behavior: 'smooth' });}
 
 
 

@@ -240,7 +240,7 @@ independence, and overall quality of life</p>
           </div>
         </div>
         <div class="col-md-4 mt-4">
-          <div class="card h-100">
+          <div class="card h-100 ">
             <div class="card-body animate">
               <div class="col-12 info-box">
             <img src="images/phlebotomy.png" alt="">
@@ -320,23 +320,23 @@ independence, and overall quality of life</p>
     <div class="row">
       <div class="col-12">
         <h4>Our Partners</h4>    
-<div class="owl-carousel partner-logo mt-5">
+<div class="owl-carousel partner-logo mt-5 " >
   
-<div class="card border-0 ms-3 text-center h-100 flex-column logo-align ">
+<div class="card border-0 ms-3 text-center h-100 flex-column logo-align " >
 <div class="item-image ms-1 "><img src="images/healthx2.png" alt="" title="HealthX Africa "></div>
 
     
 </div>
-<div class="card border-0 ms-3">
-<div class="item ms-1 "><img src="images/drkalebi.svg" alt="" title="Dr. Kalebi Labs DKL Limited"></div>
+<div class="card border-0 ms-2 w-100">
+<div class="item ms-1 w-100"><img src="images/drkalebi.svg" alt="" title="Dr. Kalebi Labs DKL Limited"></div>
 </div>
-<div class="card border-0 ms-3">
-<div class="item  ms-1"><img src="images/queensvillelogo.png" alt="" title="Queensville Pharmacy" ></div>
+<div class="card border-0 ms-2 w-100">
+<div class="item  ms-1 "><img src="images/queensvillelogo.png" alt="" title="Queensville Pharmacy" ></div>
 </div>
-<div class="card border-0 ms-3">
+<div class="card border-0 ms-2">
 <div class="item ms-1 "><img src="images/daktari.png" alt="" title="Daktari Online Africa"></div>
 </div>
-<div class="card border-0 ms-3">
+<div class="card border-0 ms-2">
 <div class="item ms-1 "><img src="images/diaspo.png" alt="" title="DiaspoCare"></div>
 </div>
 
@@ -371,8 +371,8 @@ independence, and overall quality of life</p>
 
         <a href="register.html" class="btn btn-success mb-5 mt-3">Register</a>
       </div>
-      <div class="col-md-6 animator h-100">
-        <img src="images/image3.png" class="h-100" alt="">
+      <div class="col-md-6 animator h-100 image-styler">
+        <img src="images/image3.png" class=" w-100" alt="">
       </div>
     </div>
   </div>
@@ -418,7 +418,7 @@ independence, and overall quality of life</p>
         <div class="container">
           <div class="row">
             <div class="col-md-6 d-flex ">
-          <div class="ms-auto d-flex mt-4 a-class">
+          <div class="ms-auto d-flex mt-4 a-class justify-content-center">
             <a class="" href="#"><img src="images/envelope_white.svg" alt=""></a>
                <a href="mailto:executive@sibicare.co.ke"><p class="foot-p">executive@sibicare.com</p></a>
           </div>
@@ -435,6 +435,34 @@ independence, and overall quality of life</p>
     </div>
 </footer>
 
+
+<script  src="js/jquery.js"></script>
+
+<script  src="js/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      margin: 50,
+      autoplay: true,
+      loop: true,
+      autoplayTimeout: 3000,   // Time between scrolls (in milliseconds)
+      autoplayHoverPause: true,
+      smartSpeed: 800,
+      responsive: {
+        0: {
+          items: 1  // show 1 item on small screens (e.g., phones)
+        },
+        768: {
+          items: 2  // optional: tablets
+        },
+        992: {
+          items: 3  // show 3 items on large screens (e.g., laptops/desktops)
+        }
+      },
+    });
+
+  })
+</script>
 <script
     src='js/script.js'
     async
@@ -453,19 +481,37 @@ independence, and overall quality of life</p>
     })"
     >
 </script>
-<script  src="js/jquery.js"></script>
-<script  src="js/owl.carousel.min.js"></script>
 <script>
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      autoplay: true,
-      loop: true,
-      autoplayTimeout: 3000,   // Time between scrolls (in milliseconds)
-      autoplayHoverPause: true,
-      smartSpeed: 800,
-    });
+  function scrollToIdAndCleanURL(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        history.replaceState(null, null, window.location.pathname);
+      }, 0); // Wait for scroll animation
+    }
+  }
 
-  })
+  // On page load with hash in URL
+  window.addEventListener('load', () => {
+    const hash = window.location.hash;
+    if (hash) {
+      const id = hash.substring(1);
+      scrollToIdAndCleanURL(id);
+    }
+  });
+
+  // On in-page anchor click (delegated listener)
+  document.addEventListener('click', function (e) {
+    const anchor = e.target.closest('a[href^="#"]');
+    if (anchor) {
+      const id = anchor.getAttribute('href').substring(1);
+      if (document.getElementById(id)) {
+        e.preventDefault();
+        scrollToIdAndCleanURL(id);
+      }
+    }
+  });
 </script>
 </body>
 </html>

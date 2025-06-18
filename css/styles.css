@@ -61,9 +61,25 @@ font-weight: 700;}
   margin-left: 40%;
   height: 70px;
 }
+.row h4{
+  
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color:#3c5d64;
+
+}
+.footer-img{
+background-color: white;
+ padding-top: 6px;
+  
+  align-items: center;
+}
 }
 @media(min-width: 1200px){
-
+.image-styler img{
+  height: 500px;
+  width: 100px;
+}
     .nav-item a{
     
   
@@ -924,7 +940,7 @@ label{
 .partner-logo img{
   background-color: white;
   height: 90px;
-  
+
 }
 .image-size img{
   height: 90px;
@@ -967,6 +983,12 @@ label{
 
 .card{
   border: none;
+
+}
+.card:hover{
+  scale: 1.01;
+  transition: scale 0.5 ease;
+  cursor: pointer;
 }
 
 .section-class{
@@ -1006,4 +1028,12 @@ label{
 .carousel-item-wrapper:hover .hover-description {
   opacity: 1;
 }
-
+.num{
+  
+ font-family: "DM Sans";
+ font-size: 3em; 
+ color: #14603e;
+ font-weight: 700;
+ 
+  
+}
