@@ -71,7 +71,7 @@
 </div>
                 </div>
 
-                <div class="home-icon ">
+                <div class="home-icon " id="scroll">
                     
                     <img src="images/dementiacareicon.png" alt="">
                     
@@ -266,6 +266,28 @@
     prefillMessage:'',
     })"
     >
+</script>
+<script>
+function scrollToIdAndCleanURL(id) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        history.replaceState(null, null, window.location.pathname);
+      }, 300); // Wait for scroll animation
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    const anchor = e.target.closest('a[href^="#"]');
+    if (anchor) {
+      const id = anchor.getAttribute('href').substring(1);
+      if (document.getElementById(id)) {
+        e.preventDefault();
+        scrollToIdAndCleanURL(id);
+      }
+    }
+  });
 </script>
 </body>
 </html>
