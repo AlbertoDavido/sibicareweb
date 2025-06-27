@@ -65,7 +65,7 @@
       </div>
       <div class="col-md-6">
 <div class="col-12 ">
-   <form action="" method="post" class="form-style" >
+   <form action="https://formspree.io/f/xjkrazve" method="POST" class="form-style" >
     
 <label for="" class="form-label">Full Names</label>
 <small style="color: red;">*</small>
@@ -79,7 +79,7 @@
 
 <label for="" class="form-label mt-1">PhoneNumber</label>
 <small style="color: red;">*</small>
-<input type="text" class="form-control" placeholder="Enter PhoneNumber" required>
+<input type="text" class="form-control" placeholder="+254" required>
 
 <label for="" class="form-label">Location</label>
 <small style="color: red;">*</small>
@@ -359,12 +359,17 @@
       <p>✔ Transparent & Personalized Care Plans</p>
     </div>
    </div>
+   <span id="output"></span>
+   <div class="" id="cash" hidden>
+<label for="" class="form-label">Amount</label>
+<input type="text" name="Amount" id="amount" readonly class="form-control">
+   </div>
 <label for="" class="form-label">StartDate</label>
 <small style="color: red;">*</small>
-<input type="date" class="form-control"  id="date-check" required>
+<input type="date" class="form-control"  id="date-check" name="Startdate" required>
 <label for="" class="form-label">EndDate</label>
 <small style="color: red;">*</small>
-<input type="date" class="form-control"  id="date-checking" required>
+<input type="date" class="form-control"  id="date-checking" name="EndDate" required>
 <div class="btn-form">
 <input type="submit" value="Send" class="btn btn-success mt-5 ">
 </div>

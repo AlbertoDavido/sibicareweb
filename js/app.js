@@ -39,7 +39,7 @@ const minDate=`${yyyy}-${mm}-${dd}`;
 const fetchDate=document.getElementById('date-check');
 
 const getDate=document.getElementById('date-check').setAttribute('min',minDate);
-
+const amount=[5000,6000,4000,2000];
 // const startDate=document.getElementById('date-check');
 // console.log(startDate);
 // console.log("Hello world");
@@ -51,6 +51,11 @@ const setEndDate=document.getElementById('date-checking').value=start;
     const endDate=document.getElementById('date-checking').setAttribute("min", start);
 });
 
+function calculateDays(amount,calcDate){
+    
+    return amount*calcDate;
+
+}
 const hcheck=document.getElementById("home-check");
 const acheck=document.getElementById("alzheimers-check");
 const pcheck=document.getElementById("palliative-check");
@@ -60,6 +65,8 @@ const wcheck=document.getElementById("wellness-check");
 const rcheck=document.getElementById("respite-check");
 const tcheck=document.getElementById("transitional-check");
 const item_select=document.getElementById("drop-select");
+let payAmount;
+const payField=document.getElementById('cash');
 item_select.addEventListener("change", function(){
     if(this.value==="homecare"){
         hcheck.hidden=false;
@@ -70,6 +77,36 @@ item_select.addEventListener("change", function(){
         wcheck.hidden=true;
         rcheck.hidden=true;
         tcheck.hidden=true;
+        payField.hidden=false;
+        document.getElementById('date-check').addEventListener('change', ()=>{
+    var startdate=new Date(document.getElementById('date-check').value);
+    var enddate=new Date(document.getElementById('date-checking').value);
+        if (isNaN(startdate) || isNaN(enddate)) {
+    document.getElementById("output").textContent = "Please select both dates.";
+    return;
+  }
+    var diff=enddate-startdate;
+      
+    const calcDate=diff/(1000*60*60*24)+1;
+    document.getElementById("output").textContent = `Difference: ${calcDate}`;
+    console.log(calcDate);
+        payAmount=document.getElementById('amount').value=calculateDays(amount[0],calcDate);
+        document.getElementById('date-checking').addEventListener('change', ()=>{
+            var startdate=new Date(document.getElementById('date-check').value);
+    var enddate=new Date(document.getElementById('date-checking').value);
+        if (isNaN(startdate) || isNaN(enddate)) {
+    document.getElementById("output").textContent = "Please select both dates.";
+    return;
+  }
+    var diff=enddate-startdate;
+      
+    const calcDate=diff/(1000*60*60*24)+1;
+    document.getElementById("output").textContent = `Difference: ${calcDate}`;
+    console.log(calcDate);
+        payAmount=document.getElementById('amount').value=calculateDays(amount[0],calcDate);
+        })
+        });
+        
     }
     else if(this.value==="alzheimers"){
         hcheck.hidden=true;
